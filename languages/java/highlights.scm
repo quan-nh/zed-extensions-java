@@ -4,7 +4,7 @@
 
 ; Methods
 (method_declaration
-  name: (identifier) @function)
+  name: (identifier) @function.definition)
 
 (method_invocation
   name: (identifier) @function)
@@ -70,25 +70,28 @@
 
 ; Types
 (interface_declaration
-  name: (identifier) @type)
+  name: (identifier) @type.class.definition)
 
 (annotation_type_declaration
   name: (identifier) @attribute)
 
 (class_declaration
-  name: (identifier) @type)
+  name: (identifier) @type.class.definition)
 
 (record_declaration
-  name: (identifier) @type)
+  name: (identifier) @type.class.definition)
 
 (enum_declaration
-  name: (identifier) @enum)
+  name: (identifier) @enum.definition)
 
 (enum_constant
   name: (identifier) @constant)
 
 (constructor_declaration
-  name: (identifier) @constructor)
+  name: (identifier) @constructor.definition)
+
+(compact_constructor_declaration
+  name: (identifier) @constructor.definition)
 
 (type_identifier) @type
 
